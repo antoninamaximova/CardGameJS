@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<container class="container">
+		<div class="menu">
+			<h1 class="menu_heading">Выберите уровень сложности:</h1>
+			<p class="menu_paragraph">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</p>
+			<form class="menu_list">
+				<input type="radio" name="level" value="level_easy" id="easy" checked>Простой
+				<br>
+				<input type="radio" name="level" value="level_medium"  id="medium">Средний
+				<br>
+				<input type="radio" name="level" value="level_difficult"  id="difficult">Сложный
+				<br>
+			</form>
+			<button id="button" class="menu_button"><span class="button-text">Начать игру</span></button>
+			<div class="menu__first-card"></div>
+			<div class="menu__second-card"></div>
+		</div>
+	</container>
+	<section id='container' class="container-easy disable">
+	</section>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
